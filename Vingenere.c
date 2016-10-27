@@ -4,24 +4,24 @@
 #include <string.h>
 
 
-int main(int argc, string argv[])
+int main(int argc, string argv[])  // Оголошуєм у функції аргумент argc та масив стрічки argv[] 
 {
-  if (argc != 2)
-  {
-   printf("Try again.");
-   return 1;
-  }
+       if (argc != 2)                   //Перевіряємо чи аргумент argc типу integer не дорівнює 2
+    {
+       printf("Try again.");
+       return 1;
+    }
     
-  string key = argv[1];
-  int keyCount = strlen(key);
+  string key = argv[1];           //Оголошуємо стрічку key ,якій присвоюється елемент масиву argv
+  int keyCount = strlen(key);     //Оголошуємо змінну keyCount і присвоюємо їй знаення рівне довжині стрічки key
   
   for(int k = 0; k < keyCount; k++) 
   {
-   if (!isalpha(key[k]))
-    {
+    if (!isalpha(key[k]))
+      {
      printf("Try again.");
      return 1;
-    }
+      }
   }
     
    string text = GetString();
