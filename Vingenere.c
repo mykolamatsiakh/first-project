@@ -3,10 +3,10 @@
 #include <ctype.h>
 #include <string.h>
 
-int main(int argc, string argv[])        // Оголошуєм у функції аргумент argc та масив стрічки argv[] 
+int main(int argc, string argv[])        
 {
        
-         if (argc != 2)}                   //Перевіряємо чи аргумент argc типу integer не дорівнює 2
+         if (argc != 2)}                  
     
          printf("Try again.");
          return 1;
@@ -15,7 +15,7 @@ int main(int argc, string argv[])        // Оголошуєм у функції
   string key = argv[1];                    //Оголошуємо стрічку key ,якій присвоюється елемент масиву argv
   int keyCount = strlen(key);              //Оголошуємо змінну keyCount і присвоюємо їй значення рівне довжині стрічки key
   
-	  if (argc != 2){                  //Перевіряємо чи аргумент argc типу integer не дорівнює 2	  
+	  if (argc != 2){                   
    	  printf("Try again.");
    	  return 1;
   	  }
