@@ -35,7 +35,7 @@ int main(int argc, string argv[]) // Оголошуєм у функції арг
       if (isalpha(text[i])) //Якщо елементи масиву є літерами
     {
       if (isupper(text[i]))                                                                   
-          printf("%c", ((((text[i] - 'A') + ((toupper(key[n++%keyCount]))-'A')%26) % 26) + 'A')); // Робимо маленькі літери великими
+          printf("%c", ((((text[i] - 'A') + ((toupper(key[n++%keyCount]))-'A')%26) % 26) + 'A'));  // Робимо маленькі літери великими
             
       if (islower(text[i]))
          printf("%c", ((((text[i] - 'a') + ((tolower(key[n++%keyCount]))-'a')%26) % 26) + 'a'));
