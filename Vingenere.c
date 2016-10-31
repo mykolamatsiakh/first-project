@@ -12,16 +12,15 @@ int main(int argc, string argv[])
          return 1;
     }
     
-  string key = argv[1];                    //Оголошуємо стрічку key ,якій присвоюється елемент масиву argv
-  int keyCount = strlen(key);              //Оголошуємо змінну keyCount і присвоюємо їй значення рівне довжині стрічки key
-  
+  string key = argv[1];                   
+  int keyCount = strlen(key);              
 	  if (argc != 2){                   
    	  printf("Try again.");
    	  return 1;
   	  }
     
-  string key = argv[1];                    //Оголошуємо стрічку key ,якій присвоюється елемент масиву argv
-  int keyCount = strlen(key);              //Оголошуємо змінну keyCount і присвоюємо їй значення рівне довжині стрічки key
+  string key = argv[1];                    
+  int keyCount = strlen(key);             
   for(int k = 0; k < keyCount; k++) 
   {
           if (!isalpha(key[k])){         
