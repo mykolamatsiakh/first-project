@@ -5,7 +5,7 @@
 
 int main(int argc, string argv[])        
 {
-       
+       	 const c=26;
          if (argc != 2)}                  
     
          printf("Try again.");
@@ -40,10 +40,10 @@ int main(int argc, string argv[])
          if (isalpha(text[i]))                     //Перевіряємо чи елемент масиву є великою літерою 
      {
          if (isupper(text[i]))                                                                                     
-            printf("%c", ((((text[i] - 'A') + ((toupper(key[n++%keyCount]))-'A')%26) % 26) + 'A'));  //Відбувається шифрування  
+            printf("%c", ((((text[i] - 'A') + ((toupper(key[n++%keyCount]))-'A')%c) % c) + 'A'));  //Відбувається шифрування  
             
          if (islower(text[i]))                     //Перевіряємо чи елемент масиву є маленькою літерою
-            printf("%c", ((((text[i] - 'a') + ((tolower(key[n++%keyCount]))-'a')%26) % 26) + 'a'));  //Відбувається шифрування
+            printf("%c", ((((text[i] - 'a') + ((tolower(key[n++%keyCount]))-'a')%c) % c) + 'a'));  //Відбувається шифрування
      }  else
          printf("%c", text[i]);                    //Усі елементи масиву, які не є літерами вивести без змін
    }    
