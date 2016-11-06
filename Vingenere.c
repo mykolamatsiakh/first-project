@@ -8,10 +8,10 @@ int main(int argc, string argv[])
        	 const constanta=26;
          const A = 65;
          const a =97;
-         if (argc != 2)                 
-    
+         if (argc != 2){                    
          printf("Try again.");
          return 1;
+	}
     }
     
   string key = argv[1];                   
